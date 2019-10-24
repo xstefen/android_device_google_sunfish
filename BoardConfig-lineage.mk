@@ -24,4 +24,7 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService \
 
+# VBMETA
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS="--set_hashtree_disabled_flag"
+
 -include vendor/google/sunfish/BoardConfigVendor.mk
