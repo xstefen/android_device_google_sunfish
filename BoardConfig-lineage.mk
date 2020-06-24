@@ -27,4 +27,10 @@ PRODUCT_PACKAGES += \
 # VBMETA
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS="--set_hashtree_disabled_flag"
 
+# vendor.img
+ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
+BOARD_VENDORIMAGE_PARTITION_SIZE := 562024448
+endif
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
 -include vendor/google/sunfish/BoardConfigVendor.mk
