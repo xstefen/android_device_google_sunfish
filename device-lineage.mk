@@ -64,5 +64,12 @@ TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service \
 
+# Vendor packages
+PRODUCT_PACKAGES += \
+    libdisplayconfig \
+    libjson \
+    libtinyxml \
+    libwifi-hal-qcom \
+
 # Vendor Security Patch Level
 VENDOR_SECURITY_PATCH := "2020-09-05"
