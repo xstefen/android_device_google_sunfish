@@ -19,8 +19,11 @@ PRODUCT_PLATFORM := sm7150
 
 include device/google/sunfish/device.mk
 
-# Set Vendor SPL to match platform
-VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
+# Set Vendor SPL
+VENDOR_SECURITY_PATCH = 2020-09-05
+
+# Set boot SPL
+BOOT_SECURITY_PATCH = 2020-09-05
 
 PRODUCT_PROPERTY_OVERRIDES += vendor.audio.adm.buffering.ms=3
 PRODUCT_PROPERTY_OVERRIDES += vendor.audio_hal.period_multiplier=2
