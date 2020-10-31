@@ -44,6 +44,10 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0 \
 
 # Properties
+# Native video calling
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.vt_avail_ovr=1 \
+
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
 # Trust HAL
