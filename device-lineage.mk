@@ -25,6 +25,12 @@ PRODUCT_COPY_FILES += \
 # GMS
 WITH_GMS_FI := true
 
+# IMS/Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    telephony-ext \
+
 # Lights
 PRODUCT_PACKAGES += \
     hardware.google.light@1.0.vendor \
@@ -32,6 +38,10 @@ PRODUCT_PACKAGES += \
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm \
+
+# Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/codeaurora/telephony/ims \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
