@@ -15,4 +15,7 @@
 # limitations under the License.
 #
 
+# DTBO
+TARGET_NEEDS_DTBOIMAGE := true
+
 -include vendor/google/sunfish/BoardConfigVendor.mk
