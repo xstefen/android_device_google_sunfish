@@ -509,7 +509,11 @@ PRODUCT_PACKAGES += \
 
 # Vibrator HAL
 PRODUCT_PACKAGES += \
-    com.android.vibrator.sunfish \
+    android.hardware.vibrator@1.3-service.sunfish \
+
+# DRV2624 Haptics Waveform
+PRODUCT_COPY_FILES += \
+    device/google/sunfish/vibrator/drv2624/drv2624.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/drv2624.bin
 
 # Vibrator HAL
 PRODUCT_PRODUCT_PROPERTIES +=\
