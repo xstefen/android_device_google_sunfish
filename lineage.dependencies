@@ -1,0 +1,7 @@
+[
+ {
+   "repository":  "android_kernel_google_sunfish",
+   "target_path": "kernel/google/sunfish",
+   "branch":      "lineage-18.0"
+ }
+]
