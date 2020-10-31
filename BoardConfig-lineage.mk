@@ -18,4 +18,10 @@
 # DTBO
 TARGET_NEEDS_DTBOIMAGE := true
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService \
+
 -include vendor/google/sunfish/BoardConfigVendor.mk
