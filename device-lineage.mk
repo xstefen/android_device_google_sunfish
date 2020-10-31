@@ -61,6 +61,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
+# Build necessary packages for system
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder \
+    libmediaplayerservice:32 \
+    libstagefright_httplive:32 \
+
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service \
@@ -74,6 +81,7 @@ PRODUCT_PACKAGES += \
     libbatching \
     libcodec2_hidl@1.0.vendor:32 \
     libcodec2_vndk.vendor \
+    libcppbor.vendor:64 \
     libdrm.vendor \
     libgooglecamerahal.vendor:64 \
     libgooglecamerahalutils.vendor:64 \
@@ -95,6 +103,7 @@ PRODUCT_PACKAGES += \
     libpuresoftkeymasterdevice.vendor:64 \
     libsensorndkbridge:64 \
     libsoft_attestation_cert.vendor:64 \
+    libteeui_hal_support.vendor:64 \
     libtinycompress \
     libtinyxml \
     libwifi-hal:64 \
