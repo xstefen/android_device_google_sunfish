@@ -24,6 +24,15 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService \
 
+# KERNEL
+BOARD_KERNEL_IMAGE_NAME := Image.lz4
+KERNEL_LD := LD=ld.lld
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_SOURCE := kernel/google/sunfish
+TARGET_KERNEL_CONFIG := sunfish_defconfig
+
 # VBMETA
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS="--set_hashtree_disabled_flag"
 
