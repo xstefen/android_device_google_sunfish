@@ -61,6 +61,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
+# Shared java libs
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+
 # Build necessary packages for system
 PRODUCT_PACKAGES += \
     libhidltransport \
