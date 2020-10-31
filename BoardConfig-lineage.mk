@@ -18,12 +18,6 @@
 # DTBO
 TARGET_NEEDS_DTBOIMAGE := true
 
-# RCS
-PRODUCT_PACKAGES += \
-    com.android.ims.rcsmanager \
-    PresencePolling \
-    RcsService \
-
 # KERNEL
 BOARD_KERNEL_IMAGE_NAME := Image.lz4
 KERNEL_LD := LD=ld.lld
