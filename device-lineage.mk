@@ -37,6 +37,9 @@ PRODUCT_PACKAGES += \
 AB_OTA_PARTITIONS += \
     vendor \
 
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0 \
+
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
