@@ -59,14 +59,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.vt_avail_ovr=1 \
 
-TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+#TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService \
-    
+
 # Shared java libs
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
