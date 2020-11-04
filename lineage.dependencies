@@ -1,9 +1,9 @@
 [
   {
     "remote": "github",
-    "repository": "xstfn/android_kernel_google_sunfish",
+    "repository": "flar2/Pixel-4",
     "target_path": "kernel/google/sunfish",
-    "branch": "lineage-18.0"
+    "branch": "ElementalX-P4a-1.00"
   },
   {
     "remote": "github",
@@ -11,10 +11,4 @@
     "target_path": "vendor/google",
     "branch": "lineage-18.0"
   },
-  {
-    "remote": "github",
-    "repository": "kdrag0n/proton-clang",
-    "target_path": "prebuilts/clang/host/linux-x86/clang-proton",
-    "branch": "master"
-  }
 ]

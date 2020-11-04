@@ -23,4 +23,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/sunfish/sunfish:11/RP1A.201105.002/6869500:user/release-keys
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=google/sunfish/sunfish:11/RP1A.200720.011/6746289:user/release-keys
+
 $(call inherit-product-if-exists, vendor/google/sunfish/sunfish-vendor.mk)
+#$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+

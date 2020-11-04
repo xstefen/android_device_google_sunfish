@@ -1,4 +1,3 @@
-
 #
 # Copyright (C) 2020 The LineageOS Project
 #
@@ -19,13 +18,19 @@
 TARGET_NEEDS_DTBOIMAGE := true
 
 # KERNEL
+KERNEL_LD := LD=ld.lld
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    DTC=$(shell pwd)/prebuilts/tools-lineage/$(HOST_OS)-x86/dtc/dtc \
+    MKDTIMG=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/mkdtimg
+TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/google/sunfish
-TARGET_KERNEL_CONFIG := sunfish_defconfig
+TARGET_KERNEL_CONFIG := elementalx_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.lz4
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
-TARGET_KERNEL_CLANG_VERSION := proton
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
+#TARGET_KERNEL_CLANG_VERSION := proton
+#KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin
 
 # VBMETA
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS="--set_hashtree_disabled_flag"
